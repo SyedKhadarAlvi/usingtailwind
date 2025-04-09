@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <div class="w-11/12 mx-auto text-center">
+    <h1 class="text-left text-2xl font-bold mb-4 text-blue-700">Contact Center Wallboard</h1>
+
+    <div class="flex justify-between items-center mb-5">
+      <div class="w-48 p-4 bg-blue-100 border-2 border-blue-500 rounded text-center font-bold">
+        <h2 class="text-xl agentAvail">2</h2>
+        <p>TotalAgentsAvailable</p>
+      </div>
+      <div class="w-48 p-4 bg-yellow-100 border-2 border-yellow-400 rounded text-center font-bold">
+        <h2 class="text-xl agentsBusy">0</h2>
+        <p>TotalAgentsBusy</p>
+      </div>
+      <div class="w-48 p-4 bg-purple-100 border-2 border-purple-600 rounded text-center font-bold">
+        <h2 class="text-xl callinqueue">0</h2>
+        <p>TotalCallsinQueue</p>
+      </div>
+      <div class="w-48 p-4 bg-green-100 border-2 border-green-600 rounded text-center font-bold">
+        <h2 class="text-xl callshandledtdy">0</h2>
+        <p>TotalCallsHandledToday</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex gap-5 border border-gray-300 p-4 bg-white shadow-md w-11/12 mx-auto">
+    <div class="w-3/4 overflow-x-auto">
+      <table class="w-full border-collapse bg-white rounded">
+        <thead>
+          <tr class="bg-gray-100 text-black">
+            <th class="border border-gray-300 px-2 py-1">Skill</th>
+            <th class="border border-gray-300 px-2 py-1">AVAIL</th>
+            <th class="border border-gray-300 px-2 py-1">AUX</th>
+            <th class="border border-gray-300 px-2 py-1">BUSY</th>
+            <th class="border border-gray-300 px-2 py-1">QUEUE</th>
+            <th class="border border-gray-300 px-2 py-1">LONGEST</th>
+            <th class="border border-gray-300 px-2 py-1">CALLS</th>
+            <th class="border border-gray-300 px-2 py-1">ABAN</th>
+            <th class="border border-gray-300 px-2 py-1">%SVL</th>
+            <th class="border border-gray-300 px-2 py-1">ANS'd</th>
+            <th class="border border-gray-300 px-2 py-1">ABAND'd</th>
+            <th class="border border-gray-300 px-2 py-1">Callback</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border px-2 py-1">Test Queue</td>
+            <td class="border px-2 py-1 bg-red-200">1</td>
+            <td class="border px-2 py-1">0</td>
+            <td class="border px-2 py-1">0</td>
+            <td class="border px-2 py-1">0</td>
+            <td class="border px-2 py-1 bg-green-100">0.0</td>
+            <td class="border px-2 py-1">0</td>
+            <td class="border px-2 py-1">0</td>
+            <td class="border px-2 py-1 bg-red-200">0.0%</td>
+            <td class="border px-2 py-1">0.0%</td>
+            <td class="border px-2 py-1">0.0%</td>
+            <td class="border px-2 py-1">0</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td class="border px-2 py-1">Basic Queue</td>
+            <td class="border px-2 py-1 bg-red-200">1</td>
+            <td class="border px-2 py-1">0</td>
+            <td class="border px-2 py-1">0</td>
+            <td class="border px-2 py-1">0</td>
+            <td class="border px-2 py-1 bg-red-200">673.1</td>
+            <td class="border px-2 py-1">31</td>
+            <td class="border px-2 py-1">36</td>
+            <td class="border px-2 py-1 bg-red-200">40.0%</td>
+            <td class="border px-2 py-1">26.1%</td>
+            <td class="border px-2 py-1">55.4%</td>
+            <td class="border px-2 py-1">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="w-1/4">
+      <table class="w-full border-collapse bg-white rounded mt-4">
+        <thead>
+          <tr class="bg-gray-100 text-black">
+            <th class="border border-gray-300 px-2 py-1">Agent</th>
+            <th class="border border-gray-300 px-2 py-1">State</th>
+            <th class="border border-gray-300 px-2 py-1">Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border px-2 py-1">HimaTeja Lakkimsetti</td>
+            <td class="border px-2 py-1 text-green-600 font-semibold">Available</td>
+            <td class="border px-2 py-1">0:00:11</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
